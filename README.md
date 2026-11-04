@@ -46,3 +46,12 @@ Para registrar los cambios realizados en los estilos y enviarlos al repositorio 
 El proceso consiste en preparar los archivos modificados, registrar los cambios mediante un commit y enviarlos a la rama develop del repositorio remoto mediante un push.
 
 El mensaje del commit utilizado para identificar esta
+
+## “Hallazgos: El Modelo de Caja”
+(1) La diferencia práctica entre Margin y Padding, 
+Margin: Es el espacio externo que separa el borde de un elemento respecto a otros elementos que lo rodean. No cuenta para el tamaño interno de la caja y permite valores negativos o auto
+Padding:Es el espacio interno que hay entre el contenido de un elemento y su propio borde. 
+(2) Por qué es obligatorio usar box-sizing: border-box
+Porque nos permite alteral el modelo de caja del navegador para que el ancho (width) y el alto (height) de un elemento incluyan su relleno (padding) y su borde (border)
+ (3) Cómo se ven afectados los elementos hermanos cuando le aplicas un margen grande a uno de ellos.
+ Cuando aplicas un margen grande a un elemento, afectas directamente la posición de sus elementos hermanos porque el margen empuja el espacio disponible a su alrededor
