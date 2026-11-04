@@ -49,9 +49,51 @@ El mensaje del commit utilizado para identificar esta
 
 ## “Hallazgos: El Modelo de Caja”
 (1) La diferencia práctica entre Margin y Padding, 
+
 Margin: Es el espacio externo que separa el borde de un elemento respecto a otros elementos que lo rodean. No cuenta para el tamaño interno de la caja y permite valores negativos o auto
+
 Padding:Es el espacio interno que hay entre el contenido de un elemento y su propio borde. 
 (2) Por qué es obligatorio usar box-sizing: border-box
+
 Porque nos permite alteral el modelo de caja del navegador para que el ancho (width) y el alto (height) de un elemento incluyan su relleno (padding) y su borde (border)
+
  (3) Cómo se ven afectados los elementos hermanos cuando le aplicas un margen grande a uno de ellos.
+
  Cuando aplicas un margen grande a un elemento, afectas directamente la posición de sus elementos hermanos porque el margen empuja el espacio disponible a su alrededor
+ ## Hallazgos: Centralización de Identidad Visual y Espaciado
+
+(1) La lista completa de variables declaradas 
+
+
+gracias root cree una lista de variables la cual no ayudo a definir y organizar de manera mas practicas los valores de los diseños de las pagina
+--colorprimary:  #ffc8df;
+  --colorsecundario: #e9588b;
+  --colorterciario: #b45387;
+  --colorcuarto: #58102776;
+  --colorquinto: #0d0004; 
+  --sextocolor:  #473696; 
+  --septimocolor: #530019;
+  --coloroctavo: #ffffff;
+  --colornoveno: #fbbcd048;
+  --tipografia1: "Crafty Girls", cursive;
+  --espacemedio: 25px;
+  --espaciogrande: 50px ;
+  
+
+
+(2) La ventaja de reutilizar medidas de margen y relleno en lugar de inventar valores en cada selector
+La ventaja de reutilizar medidas de margen (margin) y relleno (padding) en lugar de inventar valores en cada selector es mantener la consistencia y uniformidad del diseño.
+
+Esto permite:
+
+Mantener la coherencia visual: los elementos conservan espacios similares en toda la página.
+Facilitar el mantenimiento: si se necesita cambiar el espaciado, basta con modificar los valores reutilizables.
+Evitar errores: se reducen diferencias innecesarias entre elementos.
+Ahorrar tiempo: no es necesario definir nuevas medidas para cada selector.
+Mejorar la escalabilidad: el diseño es más fácil de adaptar y ampliar.
+
+
+(3) De qué manera la centralización en :root previene colisiones visuales a medida que la hoja
+de estilos crece.
+
+La centralización de variables CSS en :root ayuda a prevenir colisiones visuales porque permite definir y administrar los valores de diseño desde un único lugar, evitando que diferentes partes de la hoja de estilos utilicen medidas, colores o estilos contradictorios.
