@@ -1,9 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+:root{
+  --colorprimary:  #ffc8df;
+  --colorsecundario: #e9588b;
+  --colorterciario: #b45387;
+  --colorcuarto: #58102776;
+  --colorquinto: #0d0004; 
+  --sextocolor:  #473696; 
+  --septimocolor: #530019;
+  --coloroctavo: #ffffff;
+  --colornoveno: #fbbcd048;
+  --tipografia1: "Crafty Girls", cursive;
+  --espacemedio: 25px;
+  --espaciogrande: 50px ;
+  
+}
 body{
-  font-family: fantasy;
+
+  font-family: "Crafty Girls", cursive;
+  font-weight: 400;
+  font-style: normal;
+
 
 }
-header{
-  background-color:#ff0c5953
+header a {
+  color: var(--sextocolor);
   
 }
 .imagen{
@@ -16,14 +36,25 @@ header{
 
 
 main{
-  background-color: #ff216f34
+  background-color: var(--colornoveno);
+
  
 }
 footer{
-  background-color: #58102750;
+  background-color: var(--colorprimary);
+  font-family: var(--tipografia1);
+  margin-top: var(--espaciogrande);
+  margin-bottom: var(--espaciogrande);
+  margin-left: var(--espaciogrande);
+  margin-right: var(--espaciogrande);
+  border: 5px solid var(--colorsecundario);
 }
 aside{ 
-  background-color:#ab083c0d;
+
+  font-family: var(--tipografia1);
+  border: 5px solid var(--colorsecundario);
+  padding: var(--espacemedio);
+  background-color: var(--colornoveno);
 
 }
 article{
@@ -31,25 +62,37 @@ article{
   margin: 10px;
 }
 a{
-  color: #db8dbb;
+  color: var(--color2);
 }
 
 header div nav ul li {
   list-style: none;
 }
 header div nav ul li a{
-  color: #c86ab2;
+  color: var(--sextocolor);
   text-decoration: none;
 } 
+main p {
+  color: var(--colorquinto);
+}
 h2 {
-  color:#ab427a
+  color: var(--colorterciario);
 }
  p{
-  font-size: times roman;
-  color:#570633
+  font-size: var(--tipografia1);
+  color: var(--colorquinto);
  }
  
-
-#pepito {
-  color:blueviolet;
+#hola {
+ color: var(--sextocolor);
+}
+#hello {
+  color: var(--septimocolor);
+}
+#espacio1{
+  background-color: var(--colorprimary);
+  
+}
+#espacio2 {
+ background-color: var(--coloroctavo);
 }
