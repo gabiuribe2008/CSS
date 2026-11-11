@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 
 :root {
@@ -66,6 +67,7 @@ header div nav ul li {
 header div nav ul li a {
   color: var(--sextocolor);
   text-decoration: none;
+  transition: 0.3s;
 }
 
 main p {
@@ -105,6 +107,9 @@ aside nav ul li a {
   color: var(--colorquinto);
   text-decoration: none;
   transition: 0.3s;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
 }
 
 aside nav ul li a:hover {
@@ -138,12 +143,34 @@ aside nav ul li a:focus {
   transform: scale(0.95);
 }
 
+main article h2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main article h2::before {
+  content: "¡Oferta!";
+  order: 2;
+  display: inline-block;
+  background-color: var(--colorsecundario);
+  color: var(--coloroctavo);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+main article:nth-of-type(even) h2::before {
+  content: "Nuevo";
+  background-color: var(--colorterciario);
+}
+
 main article h2::after {
   content: "";
   display: block;
   width: 55px;
   height: 4px;
-  margin-top: 8px;
   background-color: var(--colorsecundario);
   border-radius: 5px;
 }
