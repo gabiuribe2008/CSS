@@ -97,3 +97,12 @@ Mejorar la escalabilidad: el diseño es más fácil de adaptar y ampliar.
 de estilos crece.
 
 La centralización de variables CSS en :root ayuda a prevenir colisiones visuales porque permite definir y administrar los valores de diseño desde un único lugar, evitando que diferentes partes de la hoja de estilos utilicen medidas, colores o estilos contradictorios.
+
+Hallazgos: Pseudoclases y Pseudoelementos
+1. Diferencia entre pseudoclases y pseudoelementos
+
+Las pseudoclases y los pseudoelementos permiten mejorar la apariencia y la interactividad de una página web mediante CSS.
+
+Las pseudoclases permiten cambiar los estilos de un elemento dependiendo de la interacción del usuario. En esta actividad se utilizaron :hover, para cambiar el color de las categorías y los botones al pasar el cursor; :focus, para resaltar los enlaces cuando se navega con el teclado; y :active, para generar un efecto de presión al hacer clic en los botones de compra.
+
+Los pseudoelementos permiten agregar contenido decorativo sin necesidad de modificar la estructura
