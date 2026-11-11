@@ -55,8 +55,10 @@ aside{
   border: 5px solid var(--colorsecundario);
   padding: var(--espacemedio);
   background-color: var(--colornoveno);
+  
 
 }
+
 article{
   padding: 14px;
   margin: 10px;
@@ -96,3 +98,4 @@ h2 {
 #espacio2 {
  background-color: var(--coloroctavo);
 }
+
