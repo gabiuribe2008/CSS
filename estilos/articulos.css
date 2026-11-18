@@ -1,0 +1,28 @@
+.color-espacio1 {
+  background-color: var(--colorprimary);
+}
+
+.color-espacio2 {
+  background-color: var(--coloroctavo);
+}
+
+.titulo-articulos::after {
+  content: "¡Oferta!";
+  color: black;
+  order: 2;
+  display: inline-block;
+  background-color: var(--colorsecundario);
+  color: var(--coloroctavo);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.espacios {
+  padding: 14px;
+  margin: 10px;
+}
+
+h2 {
+  color: var(--colorterciario);
+}

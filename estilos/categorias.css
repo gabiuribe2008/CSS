@@ -1,0 +1,38 @@
+.categorias {
+  color: var(--colorquinto);
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.categoria_enlace:hover {
+  background-color: var(--colorprimary);
+  color: var(--colorterciario);
+}
+
+.categoria_enlace::before {
+  content: "• ";
+  color: var(--colorsecundario);
+  font-weight: bold;
+}
+
+.categoria_enlace:focus {
+  outline: 3px solid var(--colorsecundario);
+  outline-offset: 3px;
+  background-color: var(--colorprimary);
+  color: var(--septimocolor);
+}
+
+aside {
+  font-family: var(--tipografia1);
+  border: 5px solid var(--colorsecundario);
+  padding: var(--espacemedio);
+  background-color: var(--colornoveno);
+}
+
+body {
+  font-family: var(--tipografia1);
+  font-weight: 400;
+  font-style: normal;
+}

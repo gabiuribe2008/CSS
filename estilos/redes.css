@@ -1,0 +1,9 @@
+.redes-decoraciones {
+  background-color: var(--colorprimary);
+  font-family: var(--tipografia1);
+  margin-top: var(--espaciogrande);
+  margin-bottom: var(--espaciogrande);
+  margin-left: var(--espaciogrande);
+  margin-right: var(--espaciogrande);
+  border: 5px solid var(--colorsecundario);
+}
