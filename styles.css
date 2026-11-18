@@ -1,6 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
+@import url(/estilos/botones.css);
+@import url(estilos/redes.css);
+@import url(estilos/categorias.css);
+@import url(image/imagen.jpg);
+@import url(/estilos/articulos.css);
 :root {
   --colorprimary: #ffc8df;
   --colorsecundario: #e9588b;
@@ -16,16 +19,6 @@
   --espaciogrande: 50px;
 }
 
-body {
-  font-family: var(--tipografia1);
-  font-weight: 400;
-  font-style: normal;
-}
-
-header a {
-  color: var(--sextocolor);
-}
-
 .imagen {
   background-image: url("imagen.jpg");
   background-repeat: no-repeat;
@@ -38,147 +31,8 @@ main {
   background-color: var(--colornoveno);
 }
 
-footer {
-  background-color: var(--colorprimary);
-  font-family: var(--tipografia1);
-  margin-top: var(--espaciogrande);
-  margin-bottom: var(--espaciogrande);
-  margin-left: var(--espaciogrande);
-  margin-right: var(--espaciogrande);
-  border: 5px solid var(--colorsecundario);
-}
-
-aside {
-  font-family: var(--tipografia1);
-  border: 5px solid var(--colorsecundario);
-  padding: var(--espacemedio);
-  background-color: var(--colornoveno);
-}
-
-article {
-  padding: 14px;
-  margin: 10px;
-}
-
-header div nav ul li {
-  list-style: none;
-}
-
 header div nav ul li a {
   color: var(--sextocolor);
   text-decoration: none;
   transition: 0.3s;
-}
-
-main p {
-  color: var(--colorquinto);
-}
-
-h2 {
-  color: var(--colorterciario);
-}
-
-p {
-  font-family: var(--tipografia1);
-  color: var(--colorquinto);
-}
-
-#hola {
-  color: var(--coloroctavo);
-  background-color: var(--colorterciario);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-#hello {
-  color: var(--sextocolor);
-  background-color: var(--colorterciario);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-aside nav ul li a {
-  color: var(--colorquinto);
-  text-decoration: none;
-  transition: 0.3s;
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 5px;
-}
-
-aside nav ul li a:hover {
-  background-color: var(--colorprimary);
-  color: var(--colorterciario);
-}
-
-aside nav ul li a::before {
-  content: "• ";
-  color: var(--colorsecundario);
-  font-weight: bold;
-}
-
-aside nav ul li a:focus {
-  outline: 3px solid var(--colorsecundario);
-  outline-offset: 3px;
-  background-color: var(--colorprimary);
-  color: var(--septimocolor);
-}
-
-#hola:hover,
-#hello:hover {
-  background-color: var(--colorsecundario);
-  color: var(--coloroctavo);
-}
-
-#hola:active,
-#hello:active {
-  background-color: var(--septimocolor);
-  color: var(--coloroctavo);
-  transform: scale(0.95);
-}
-
-main article h2 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-main article h2::before {
-  content: "¡Oferta!";
-  order: 2;
-  display: inline-block;
-  background-color: var(--colorsecundario);
-  color: var(--coloroctavo);
-  padding: 4px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
-main article:nth-of-type(even) h2::before {
-  content: "Nuevo";
-  background-color: var(--colorterciario);
-}
-
-main article h2::after {
-  content: "";
-  display: block;
-  width: 55px;
-  height: 4px;
-  background-color: var(--colorsecundario);
-  border-radius: 5px;
-}
-
-#espacio1 {
-  background-color: var(--colorprimary);
-}
-
-#espacio2 {
-  background-color: var(--coloroctavo);
 }
