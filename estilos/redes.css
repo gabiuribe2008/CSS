@@ -7,3 +7,9 @@
   margin-right: var(--espaciogrande);
   border: 5px solid var(--colorsecundario);
 }
+
+.redes-decoraciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
