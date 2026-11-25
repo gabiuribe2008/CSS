@@ -149,3 +149,18 @@ Es importante aclarar que BEM no elimina completamente la cascada, sino que ayud
 La combinación de BEM y la modularidad permite desarrollar interfaces más organizadas, fáciles de mantener y preparadas para crecer. La separación de archivos facilita el trabajo en equipo, mientras que la nomenclatura BEM permite identificar cada componente y mantener una especificidad plana.
 
 Gracias a esta metodología, es posible realizar cambios en el diseño de una página sin generar conflictos innecesarios entre los estilos, conservando una estructura clara y reutilizable.
+
+
+## Hallazgos: Arquitectura Total con Flexbox
+
+### 1. Organización del layout global
+
+La propiedad `min-height: 100vh` permitió que el contenedor principal ocupara como mínimo toda la altura de la pantalla. Al combinarla con `flex-direction: column`, pude organizar verticalmente el header, el contenido central y el footer. Además, `flex: 1` permitió que el contenido central aprovechara el espacio disponible.
+
+### 2. Uso de gap en la navegación
+
+La propiedad `gap` permitió establecer una separación uniforme entre los enlaces de navegación, evitando utilizar márgenes individuales. También facilitó el mantenimiento de los espacios mediante Custom Properties.
+
+### 3. Integración de BEM, Custom Properties y Flexbox
+
+La combinación de estas tecnologías permitió mantener una estructura organizada, centralizar los estilos y distribuir los elementos de manera flexible. Esto facilita la creación de tarjetas de productos que pueden adaptarse a diferentes longitudes de texto y mantener una distribución uniforme de sus botones.
