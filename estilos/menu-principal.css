@@ -1,0 +1,19 @@
+@import url(imagen.jpg);
+
+header div nav ul li a {
+  color: var(--sextocolor);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list {
+  display: flex;
+  gap: var(--espacemedio);
+}
