@@ -106,3 +106,46 @@ Las pseudoclases y los pseudoelementos permiten mejorar la apariencia y la inter
 Las pseudoclases permiten cambiar los estilos de un elemento dependiendo de la interacción del usuario. En esta actividad se utilizaron :hover, para cambiar el color de las categorías y los botones al pasar el cursor; :focus, para resaltar los enlaces cuando se navega con el teclado; y :active, para generar un efecto de presión al hacer clic en los botones de compra.
 
 Los pseudoelementos permiten agregar contenido decorativo sin necesidad de modificar la estructura
+
+
+## Hallazgos: Arquitectura BEM y Modularidad
+
+### 1. ¿Qué significa BEM y cómo se escribe visualmente?
+
+BEM significa *Block, Element, Modifier* (Bloque, Elemento y Modificador). Es una metodología que permite organizar las clases de HTML y CSS de manera clara, facilitando la identificación de cada componente y sus partes.
+
+Su estructura se representa de la siguiente manera:
+
+- **Bloque:** es un componente independiente, como una tarjeta de producto. Se escribe `.card`.
+- **Elemento:** es una parte que pertenece al bloque y se identifica con dos guiones bajos. Por ejemplo, `.card__title` representa el título de una tarjeta.
+- **Modificador:** permite crear una variación visual o funcional de un bloque o elemento. Se escribe con dos guiones medios, como `.card--destacada`.
+
+Esta nomenclatura permite identificar fácilmente la función de cada clase y evita utilizar nombres genéricos que puedan generar conflictos entre componentes.
+
+### 2. ¿Por qué dividir el CSS en varios archivos facilita el trabajo colaborativo?
+
+La modularidad consiste en dividir una hoja de estilos principal en archivos más pequeños, donde cada uno se encarga de un componente específico de la página.
+
+Durante la práctica, se utilizaron archivos independientes como `tarjeta.css` y `botones.css`, que posteriormente se conectaron al archivo principal `style.css` mediante la regla `@import`.
+
+Esta organización facilita el trabajo colaborativo porque permite que cada integrante del equipo trabaje en un componente diferente sin tener que modificar constantemente un mismo archivo. También ayuda a encontrar errores, realizar modificaciones y mantener el código organizado.
+
+Además, cuando se necesita actualizar un componente, es posible modificar únicamente su archivo correspondiente sin afectar directamente los estilos de los demás.
+
+### 3. ¿Cómo BEM evita la guerra de especificidad y mantiene un peso plano?
+
+La guerra de especificidad ocurre cuando varias reglas CSS intentan aplicar estilos diferentes al mismo elemento, generando conflictos sobre cuál debe prevalecer.
+
+BEM ayuda a evitar este problema mediante el uso de clases independientes y selectores planos, sin necesidad de crear reglas anidadas o cada vez más complejas.
+
+Por ejemplo, en lugar de utilizar un selector como `.producto h2`, se utiliza la clase `.card__title`. Ambas reglas tienen una especificidad de 10 puntos, pero la segunda permite identificar directamente el elemento que se desea modificar.
+
+Al mantener una especificidad uniforme, las reglas CSS son más fáciles de controlar y se reducen los conflictos entre componentes. Los estilos se aplican de manera más predecible, teniendo en cuenta el orden de la cascada y las demás reglas de prioridad de CSS.
+
+Es importante aclarar que BEM no elimina completamente la cascada, sino que ayuda a mantenerla organizada y evita que los estilos dependan de selectores demasiado específicos.
+
+### Conclusión
+
+La combinación de BEM y la modularidad permite desarrollar interfaces más organizadas, fáciles de mantener y preparadas para crecer. La separación de archivos facilita el trabajo en equipo, mientras que la nomenclatura BEM permite identificar cada componente y mantener una especificidad plana.
+
+Gracias a esta metodología, es posible realizar cambios en el diseño de una página sin generar conflictos innecesarios entre los estilos, conservando una estructura clara y reutilizable.
