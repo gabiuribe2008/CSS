@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card__description {
+    flex-grow: 1;
+}
+
+.card__price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+} 
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--espaciado-medio);
+}
